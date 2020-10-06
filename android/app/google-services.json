@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "196631895355",
+    "firebase_url": "https://elintegroappfactory-e25ef.firebaseio.com",
+    "project_id": "elintegroappfactory-e25ef",
+    "storage_bucket": "elintegroappfactory-e25ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196631895355:android:e59200154c50ce1d1d6b1e",
+        "android_client_info": {
+          "package_name": "com.elintegro.customerchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196631895355-6hq053bpraop5ueh6m9h0f3vf2lcda2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elintegro.customerchat",
+            "certificate_hash": "1f0a88a4a157d91cb71b8a6377d2f78f092d2f8a"
+          }
+        },
+        {
+          "client_id": "196631895355-u2on7cqltg0t5n5eu3csf92h0mt86jlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB90VuUUIMZ4iwf3TDjF8OcAuMgqszNsKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196631895355-u2on7cqltg0t5n5eu3csf92h0mt86jlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
