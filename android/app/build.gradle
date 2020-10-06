@@ -48,10 +48,10 @@ android {
             storePassword 'android'
         }
         release {
-            keyAlias 'release'
-            keyPassword 'android'
-            storeFile file("keystore/debug.keystore")
-            storePassword 'android'
+            keyAlias 'key'
+            keyPassword 'java11'
+            storeFile file("keystore/key.jks")
+            storePassword 'java11'
         }
     }
 
