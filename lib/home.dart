@@ -4,6 +4,7 @@ import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'utils/text.dart';
 import 'services/sync-data-server.dart';
 import 'services/fire-store-service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -423,13 +424,17 @@ class HomeScreenState extends State<HomeScreen> {
                           if (snapshot.hasData && snapshot.data.documents.length > 0){
                             var docm = snapshot.data.documents.first;
                             Map<String, dynamic> data = docm.data();
+                            String content = data['content'];
+                            if(data['content'] != 0){
+                              content = messageAttachment;
+                            }
                             return Container(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Text(
-                                      data['content'],
+                                      content,
                                       style: data['lastSeen'] ? TextStyle(color: greyColor, fontSize: 14.0) : TextStyle(color: primaryColor, fontWeight: FontWeight.bold, fontSize: 16.0),
                                       overflow: TextOverflow.ellipsis,
                                     ),
