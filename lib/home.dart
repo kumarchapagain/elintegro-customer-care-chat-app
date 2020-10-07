@@ -106,8 +106,8 @@ class HomeScreenState extends State<HomeScreen> {
       Platform.isAndroid
           ? 'com.elintegro.customerchat'
           : 'com.elintegro.customerchat',
-      'Flutter chat demo',
-      'your channel description',
+      appBarTitle, //title
+      appTitle, //description
       playSound: true,
       enableVibration: true,
       importance: Importance.Max,

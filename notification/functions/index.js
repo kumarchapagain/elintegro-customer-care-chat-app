@@ -12,7 +12,11 @@ exports.sendNotification = functions.firestore
 
     const idFrom = doc.idFrom
     const idTo = doc.idTo
-    const contentMessage = doc.content
+    let contentMessage = doc.content
+    const messageType = doc.type
+    if(messageType != 0){
+        contentMessage = 'Sent an attachment'
+    }
 
     // Get push token user to (receive)
     admin
