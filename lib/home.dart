@@ -425,7 +425,7 @@ class HomeScreenState extends State<HomeScreen> {
                             var docm = snapshot.data.documents.first;
                             Map<String, dynamic> data = docm.data();
                             String content = data['content'];
-                            if(data['content'] != 0){
+                            if(data['type'] != 0){
                               content = messageAttachment;
                             }
                             return Container(
