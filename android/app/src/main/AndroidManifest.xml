@@ -8,7 +8,7 @@
     <application
         android:name=".Application"
         android:label="Elintegro Customer Care"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/elintegro_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
